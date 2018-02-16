@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <form>
+			<div id="addHere">
+			</div>
+			<button type="submit">Save</button>
+			<button id="sauceReset">Reset to defaults</button>
+			<button id="sauceNotesClear">Remove all Notes</button>
+			<button id="sauceCacheClear">Remove torrent links cache</button>
+			<div>Nerds only config below, data in JSON format</div>
+			<div>
+				<textarea id="saucetextarea" ></textarea>
+			</div>
+			<div>
+				<select name="nerdData" id="idNerdData" >
+					<option value="0">None</option>
+					<option value="1">Notes</option>
+					<option value="2">Torrent finds</option>
+					<option value="3">Site database</option>
+				</select><button id="idNerdImport">Import from text box</button>
+			</div>
+    </form>
+		<form id="sitesDb" name="sitesDb" >
+			<h2>Sites database</h2>
+			<div style="border-style: solid; padding:5px" >
+				<select name="siteSelect" id="idSiteSelect" >
+				</select>
+				<div>
+					<div><label>Name<input type="text" id="idSiteName" /></label></div>
+					<div><label>Host<input type="text" id="idSiteHost" /></label></div>
+					<div><input type="checkbox" id="idSiteCheck"/>Check page contains useful content</div>
+					<div><input type="checkbox" id="idSitePositive"/>Text match for success rather than failure</div>
+					<div id="idSiteSearchDiv"></div>
+					<div id="idSiteNoneDiv"></div>
+					<div id="idSiteErrorDiv"></div>
+					<div>Special cases attributes, enter valid Json</div>
+					<div id="idExtras"></div>
+					<div>
+						<button id="siteUpdate">Update</button>
+						<button id="siteClone">Clone</button>
+						<button id="siteDelete">Delete</button>
+						<button id="siteReset">Factory Reset</button>
+					</div>
+				</div>
+			</div>
+		</form>
+
+    <script src="sitesdb.js"></script>
+    <script src="options.js"></script>
+
+  </body>
+
+</html>

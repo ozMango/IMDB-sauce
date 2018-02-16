@@ -1,0 +1,33 @@
+{
+
+	"manifest_version": 2,
+	"name": "IMDB Sauce",
+	"version": "1.1.9",
+	"description": "Enhances links to IMDB titles on visited web pages.\nEnhances IMDB title page.\nEnhancement includes:\n - links to title on selected sites.\n - sticky note.\nWhere possible links checked and marked to indicate that site covers title.\nBased on greasemonkey script: IMDB scout.",
+
+	"permissions": [
+		"<all_urls>",
+		"webRequest",
+		"storage",
+		"unlimitedStorage"
+	],
+
+	"icons": {
+		"48": "icons/imdbsauce.png"
+	},
+
+	"options_ui": {
+			"page": "options.html"
+		},
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [ "jquery-3.3.1.js"
+				, "sitesdb.js"
+				, "sauce.js"
+			]
+		}
+	]
+}

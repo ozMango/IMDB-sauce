@@ -1,1 +1,0 @@
-web-ext sign -i=*.bat --api-key=user:13244719:616  --api-secret=9fde4f86ec591fa55bc180a23caa930630e8100d1a220e8af9f0acce070c7179

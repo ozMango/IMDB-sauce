@@ -1,1 +1,0 @@
-web-ext run -p=C:\Users\Owner\AppData\Roaming\Mozilla\Firefox\Profiles\f0ggijbk.default --start-url http://www.imdb.com/title/tt0070029/ --bc --ignore-files "*.bat"
